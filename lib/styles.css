@@ -1,0 +1,19 @@
+.letter {
+  background: yellow;
+  border: 1px magenta solid;
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+}
+
+.top-row, .middle-row, .bottom-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.letter:hover {
+  background: magenta;
+  color: white;
+  border-color: black;
+}
