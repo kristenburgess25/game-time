@@ -1,9 +1,15 @@
+.player-message {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+}
+
 .letter {
-  background: yellow;
-  border: 1px magenta solid;
+  background: #EDB579;
+  border: 1px #455C4F solid;
   width: 50px;
   height: 50px;
   margin: 1px;
+  outline-color: #FF6600;
 }
 
 .top-row, .middle-row, .bottom-row {
@@ -12,8 +18,64 @@
   padding-bottom: 2px;
 }
 
+.top-row {
+  padding-top: 5px;
+}
+
 .letter:hover {
-  background: magenta;
+  background: #CC5543;
   color: white;
-  border-color: black;
+  border-color: #455C4F;
+}
+
+.player-message {
+  display: flex;
+  margin:auto;
+  justify-content: center;
+}
+
+.mummy {
+  height: 200px;
+  width: 200px;
+}
+
+.kid{
+  height: 150px;
+  width: 150px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 10px;
+
+}
+
+.empty-word {
+  display: flex;
+  margin:auto;
+  justify-content: center;
+}
+
+.keyboard-container {
+border-top: 1px solid #455C4F;
+}
+
+.new-word-button {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  background: #CC5543;
+  border: 1px #455C4F solid;
+  width: 90px;
+  height: 50px;
+  color: white;
+  outline-color: #FF6600;
+}
+
+.new-word-button:hover {
+  background: #EDB579;
+  border-color: #455C4F;
+}
+
+.leaves {
+  height: 200px;
+  width: 100%;
 }
