@@ -8,9 +8,22 @@
   <title>HangMan</title>
   <link rel="stylesheet" href="reset.css" media="screen" title="styles" charset="utf-8">
   <link rel="stylesheet" href="styles.css" media="screen" title="styles" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
   <body>
+
+  <div class="monster-image">
+    <img class="mummy" src="../images/cartoon-mummy.png" alt="mummy">
+    <img class="kid" src="../images/kid.png" alt="kid">
+  </div>
+
+  <div="blank-word-container">
+    <p class="empty-word"> (_ _ _ _ _ _) </p>
+    <p class="player-message">(You failed)</p>
+  </div>
+
+  <div class="keyboard-container">
   <section class ="top-row">
   <button class ="q letter">q</button>
   <button class ="w letter">w</button>
@@ -45,6 +58,16 @@
   <button class ="n letter">n</button>
   <button class ="m letter">m</button>
 </section>
+</div>
+
+
+  <button class="new-word-button">New Word</button>
+  <img class="leaves" src="../images/game-leaves.png" alt="leaves">
+
+
+<!-- <footer class="leaves">
+
+</footer> -->
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
   <script src="game-time.js" charset="utf-8"></script>

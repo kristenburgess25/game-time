@@ -6,9 +6,7 @@ Level One:
 
 //HTML
 //keyboard?
-//reset game button
 //load new word button(to play again, not necessary on page load)
-//give up button (don't have to have, just an idea)
 //<p>s to generate text like 'you have x tries left', 'you got it! load new word'
 //hangman images
 
@@ -33,6 +31,7 @@ Level One:
 //function to make reset game button generate new word and reset keyboard
 //function to make load new word button generate new word and reset keyboard
 //function to stop game when last hangman image displays "die" message
+//function to up level if all words are completed
 //keyboard hot keys
 
 //UP LEVEL OF DIFFICULITY
