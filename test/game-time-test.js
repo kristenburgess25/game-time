@@ -1,14 +1,14 @@
-var randomWordLevOne = require("../lib/game-time");
-var assert = require("chai").assert;
+const HangMan = require("../lib/game-time");
+const assert = require("chai").assert;
 
 
-describe ('randomWordLevOne', function (){
 
+describe ("randomWordLevOne", function (){
+  var hangMan = new HangMan();
   it('should be a function', function (){
-    assert.isFunction(randomWordLevOne);
+    assert.isFunction(hangMan.randomWordLevOne, true);
   });
 
-  it('should generate a random word ')
-  var word = new word();
-  assert.is
+//   it('should generate a random word');
+//   var Word = new word();
 });
