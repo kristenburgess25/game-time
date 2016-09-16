@@ -1,14 +1,33 @@
-const HangMan = require("../lib/game-time");
 const assert = require("chai").assert;
+  const HangMan = require("../lib/game-time");
 
 
 
-describe ("randomWordLevOne", function (){
+describe ("Hang Man", function() {
+
   var hangMan = new HangMan();
-  it('should be a function', function (){
-    assert.isFunction(hangMan.randomWordLevOne, true);
+
+  it('should be a function', function() {
+    assert.isFunction(hangMan.getLevTwoWord);
   });
 
-//   it('should generate a random word');
-//   var Word = new word();
+  it('should return a random number integer between 0 and 6', function(){
+    assert.isNumber(hangMan.getRandomIndex());
+  });
+
+  it.skip('should return an array with string values', function() {
+
+  });
+
+  it.skip('should return an expected string if given the correct index', function(){
+
+  });
+
+
+
+  // it('should return a string within levTwo word Array', function() {
+  //   var 1 = Math.random()* levTwoWord.length);
+  //   assert.equal(hangMan.getLevTwoWord, 'cranberry');
+  // })
+
 });
