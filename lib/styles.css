@@ -1,6 +1,6 @@
 .player-message {
   font-family: 'Amatic SC', cursive;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .letter {
@@ -52,6 +52,8 @@
   display: flex;
   margin:auto;
   justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
 }
 
 .keyboard-container {
