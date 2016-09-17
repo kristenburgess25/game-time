@@ -3,11 +3,11 @@ const assert = require("chai").assert;
 
 
 
-describe ("Hang Man", function() {
+describe ("Hang Man", function(){
 
   var hangMan = new HangMan();
 
-  it('should be a function', function() {
+  it('should be a function', function(){
     assert.isFunction(hangMan.getLevTwoWord);
   });
 
@@ -15,11 +15,12 @@ describe ("Hang Man", function() {
     assert.isNumber(hangMan.getRandomIndex());
   });
 
-  it.skip('should return an array with string values', function() {
-
+  it('should return an array with string values', function(){
+    assert.isString(hangMan.getLevTwoWord());
   });
 
-  it.skip('should return an expected string if given the correct index', function(){
+  it('should return an expected string if given the correct index', function(){
+
 
   });
 
