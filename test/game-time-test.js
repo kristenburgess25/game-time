@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-  const HangMan = require("../lib/game-time");
+const HangMan = require("../lib/game-time");
 
 
 
@@ -11,7 +11,7 @@ describe ("Hang Man", function(){
     assert.isFunction(hangMan.getLevTwoWord);
   });
 
-  it('should return a random number integer between 0 and 6', function(){
+  it('should return a random number integer between 0 and 5', function(){
     assert.isNumber(hangMan.getRandomIndex());
   });
 
@@ -19,10 +19,11 @@ describe ("Hang Man", function(){
     assert.isString(hangMan.getLevTwoWord());
   });
 
-  it('should return an expected string if given the correct index', function(){
-
-
-  });
+  // it('should return an expected string if given the correct index', function(){
+  //   var hangman = new Hangman();
+  //   hangman.getLevTwoWord();
+  //
+  // });
 
 
 

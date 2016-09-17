@@ -44,60 +44,62 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	const hangMan = __webpack_require__(1);
-	__webpack_require__(2);
+	const HangMan = __webpack_require__(1);
+	// require("../lib/dom-interaction");
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	// var $ = require('jquery');
 	// function HangMan() {
-	__webpack_require__(2);
+	// require('./dom-interaction');
 
-	function getLevOneWord() {
-	  var levOneWord = new Array('fall', 'cider', 'corn', 'acorn', 'candy', 'leaves');
-	  var newLevOneWord = levOneWord[parseInt(Math.random() * levOneWord.length)];
-	  return newLevOneWord;
+	function HangMan() {
+	  this.wordArray = this.getLevTwoWordArr();
+	  this.word = this.getLevTwoWord();
+	}
+
+	HangMan.prototype.getRandomIndex = function () {
+	  return parseInt(Math.random() * this.wordArray.length);
 	};
 
-	function getLevTwoWord() {
-	  var levTwoWord = ['autumn', 'cranberry', 'hayride', 'harvest', 'pumpkin', 'football'];
-	  return levTwoWord[parseInt(Math.random() * levTwoWord.length)];
+	HangMan.prototype.getLevTwoWordArr = function () {
+	  return this.wordArray = ['autumn', 'cranberry', 'hayride', 'harvest', 'pumpkin', 'football'];
 	};
 
-	function getLevThreeWord() {
-	  var levThreeWord = ['qurterback', 'pilgrim', 'cornmaze', 'vampire', 'werewolf'];
-	  return levThreeWord[parseInt(Math.random() * levThreeWord.length)];
+	HangMan.prototype.getLevTwoWord = function () {
+	  return this.wordArray[this.getRandomIndex()];
 	};
+	//
+	// function getLevOneWord() {
+	//   var levOneWord = new Array('fall','cider','corn','acorn','candy','leaves');
+	//   var newLevOneWord = levOneWord[parseInt(Math.random()* levOneWord.length)];
+	//   return newLevOneWord;
+	// };
+	//
+	// function getLevTwoWord() {
+	//   var levTwoWord = ['autumn','cranberry','hayride','harvest','pumpkin','football'];
+	//   return levTwoWord[parseInt(Math.random()* levTwoWord.length)];
+	// };
+	//
+	// function getLevThreeWord() {
+	//   var levThreeWord = ['qurterback','pilgrim','cornmaze','vampire','werewolf'];
+	//   return levThreeWord[parseInt(Math.random()* levThreeWord.length)];
+	// };
+	//
+	// function getLevFourWord() {
+	//   var levFourWord = ['thanksgiving','foraging','foliage','rustling','scarecrow'];
+	//   return levFourWord[parseInt(Math.random()* levFourWord.length)];
+	// };
+	//
+	// function getLevFiveWord() {
+	//   var levFiveWord = ['cornucopia','autumnal','persimmon','baldcypress','sassafras'];
+	//   return levFiveWord[parseInt(Math.random()* levFiveWord.length)];
+	// };
 
-	function getLevFourWord() {
-	  var levFourWord = ['thanksgiving', 'foraging', 'foliage', 'rustling', 'scarecrow'];
-	  return levFourWord[parseInt(Math.random() * levFourWord.length)];
-	};
 
-	function getLevFiveWord() {
-	  var levFiveWord = ['cornucopia', 'autumnal', 'persimmon', 'baldcypress', 'sassafras'];
-	  return levFiveWord[parseInt(Math.random() * levFiveWord.length)];
-	};
-
-	// module.exports = HangMan;
-
-/***/ },
-/* 2 */
-/***/ function(module, exports) {
-
-	
-
-	$('document').ready(function () {
-	  var wordString = getLevOneWord();
-	  document.querySelector('.empty-word').innerHTML = wordString.split('');
-	});
-
-	$('.new-word-button').on('click', function () {
-	  var wordString = getLevOneWord();
-	  document.querySelector('.empty-word').innerHTML = wordString.split('');
-	});
+	module.exports = HangMan;
 
 /***/ }
 /******/ ]);
