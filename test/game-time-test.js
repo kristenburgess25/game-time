@@ -8,7 +8,7 @@ describe ("Hang Man", function(){
   var hangMan = new HangMan();
 
   it('should be a function', function(){
-    assert.isFunction(hangMan.getLevTwoWord);
+    assert.isFunction(hangMan.getLevOneWord);
   });
 
   it('should return a random number integer between 0 and 5', function(){
@@ -16,7 +16,7 @@ describe ("Hang Man", function(){
   });
 
   it('should return an array with string values', function(){
-    assert.isString(hangMan.getLevTwoWord());
+    assert.isString(hangMan.getLevOneWord());
   });
 
   // it('should return an expected string if given the correct index', function(){
