@@ -1,5 +1,6 @@
 const assert = require("chai").assert;
 const HangMan = require("../lib/game-time");
+ 
 
 
 describe("HangMan", function(){
@@ -15,6 +16,11 @@ describe("HangMan", function(){
   });
 
 describe("hangMan", function(){
+
+  it('should have a method called "getRandomIndex()"', function(){
+    var hangMan = new HangMan();
+    assert.isFunction(hangMan.getRandomIndex);
+  });
 
   it('should return a random number integer between 0 and 5', function(){
     var hangMan = new HangMan();
