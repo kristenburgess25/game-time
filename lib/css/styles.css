@@ -3,6 +3,28 @@
   font-size: 40px;
 }
 
+ .difficulty-container {
+   font-family:'Amatica SC', cursive;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 2px;
+ }
+
+ .up, .down {
+   font-family:'Amatica SC', cursive;
+   border-radius: 50%;
+   color: #FFFFFF;
+   background-color: #000000;
+   border: none;
+   margin: 1px;
+ }
+
+ .up:hover, .down:hover {
+   color: #000000;
+   background: #CC5543;
+ }
+
 .letter {
   background: #EDB579;
   border: 1px #455C4F solid;
