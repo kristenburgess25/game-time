@@ -19,6 +19,11 @@ describe ("Hang Man", function(){
     assert.isString(hangMan.getLevOneWord());
   });
 
+  it('should instantiate a new Hangman game', function () {
+    var hangman = new HangMan();
+    assert.isObject(hangman);
+  })
+
   // it('should return an expected string if given the correct index', function(){
   //   var hangman = new Hangman();
   //   hangman.getLevTwoWord();
