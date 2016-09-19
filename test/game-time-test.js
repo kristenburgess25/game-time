@@ -2,28 +2,32 @@ const assert = require("chai").assert;
 const HangMan = require("../lib/game-time");
 
 
-
-describe ("HangMan", function(){
-
-  var hangMan = new HangMan();
+describe("HangMan", function(){
 
   it('should be a function', function(){
-    assert.isFunction(hangMan.getLevOne;
+    assert.isFunction(HangMan);
   });
 
+  it('should instantiate a new Hangman game', function () {
+    var hangMan = new HangMan();
+    assert.isObject(hangMan);
+    });
+  });
+
+describe("hangMan", function(){
+
   it('should return a random number integer between 0 and 5', function(){
+    var hangMan = new HangMan();
     assert.isNumber(hangMan.getRandomIndex());
   });
 
   it('should return an array with string values', function(){
-    assert.isString(hangMan.getLevOneWord());
+    var hangMan = new HangMan();
+    assert.isString(hangMan.getWord());
   });
 
-  it('should instantiate a new Hangman game', function () {
-    assert.isObject(hangMan);
-  });
-
-  it('should have a method called "placeUnderscores()"', function(){
+  it.skip('should have a function called "placeUnderscores()"', function(){
+    var hangMan = new HangMan();
     assert.isFunction(hangMan.placeUnderscores);
-  })
+  });
 });
