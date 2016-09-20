@@ -15,7 +15,7 @@ describe("HangMan", function(){
     });
   });
 
-describe("hangMan", function(){
+describe("hangman", function(){
 
   it('should have a method called "getRandomIndex()"', function(){
     var hangman = new HangMan();
@@ -32,8 +32,9 @@ describe("hangMan", function(){
     assert.isString(hangman.getWord());
   });
 
-  it.skip('should have a function called "placeUnderscores()"', function(){
+  it.skip('should have a method called "placeUnderscores()"', function(){
     var hangman = new HangMan();
     assert.isFunction(hangman.placeUnderscores);
   });
+
 });
