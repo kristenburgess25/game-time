@@ -11,6 +11,19 @@
    padding-bottom: 2px;
  }
 
+ .guesscount-container {
+   font-family:'Amatica SC', cursive;
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 2px;
+   margin: auto;
+ }
+
+ .correct-guesses, .incorrect-guesses {
+   padding: 5px;
+ }
+
  .up, .down {
    font-family:'Amatica SC', cursive;
    border-radius: 50%;
@@ -73,7 +86,7 @@
 
 .empty-word {
   display: flex;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   font-family: 'Amatica SC', cursive;
   font-size: 50px;
