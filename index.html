@@ -20,11 +20,19 @@
 
   <div="blank-word-container">
     <p class="empty-word"></p>
-    <p class="player-message">guess the word before the mummy gets you!</p>
+    <p class="player-message">You have five guesses or the mummy gets you!</p>
   </div>
 
+  <div class="guesscount-container">
+    <!-- <p> Correct Guesses: <p class="correct-guesses"> 0 </p> -->
+    <p> Incorrect Guesses: <p class="incorrect-guesses"> 0 </p>
+  </p>
+  </div>
+
+  <button class="new-word-button">New Word</button>
+
   <div class="difficulty-container">
-    <h3> Difficulty Level: <span class="game-level"> </span></h3>
+    <h3> Difficulty Level:<span class="game-level"> </span></h3>
     <button class="up"> UP </button>
     <button class="down"> DOWN </button>
   </div>
@@ -65,7 +73,7 @@
   </div>
 
 
-  <button class="new-word-button">New Word Level 1</button>
+
   <img class="leaves" src="../images/game-leaves.png" alt="leaves">
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
