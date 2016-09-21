@@ -77,14 +77,14 @@
   width: 200px;
 }
 
-.kid{
+.kid {
   height: 150px;
   width: 150px;
   float: right;
   margin-top: 50px;
   margin-right: 10px;
-
 }
+
 
 .empty-word {
   display: flex;
