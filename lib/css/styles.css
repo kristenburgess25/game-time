@@ -122,3 +122,23 @@ border-top: 1px solid #455C4F;
   height: 200px;
   width: 100%;
 }
+
+@media screen and (max-width: 700px){
+  .kid {
+    height: 90px;
+    width: 90px;
+    margin-top: 10px;
+  }
+.mummy {
+  height: 100px;
+  width: 100px;
+  }
+  .player-message, .guesscount-container,
+  .new-word-button,  .difficulty-container {
+    font-size: 15pt;
+  }
+  .new-word-button {
+    height: 30px;
+    width: 200px;
+  }
+}
