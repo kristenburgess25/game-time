@@ -32,7 +32,14 @@ describe("hangman", function(){
     assert.isString(hangman.getWord());
   });
 
-  it.skip('should have a method called "placeUnderscores()"', function(){
+
+  it('should have a function called newGame()"', function(){
+    var hangman = new HangMan();
+    assert.isFunction(hangman.newGame);
+  });
+
+
+  it('should have a method called "placeUnderscores()"', function(){
     var hangman = new HangMan();
     assert.isFunction(hangman.placeUnderscores);
   });
