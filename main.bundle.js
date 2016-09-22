@@ -126,7 +126,7 @@
 	  console.log(hangman.wordToGuess);
 	  $('.letter').attr('disabled', false);
 	  $('.mummy').css('margin-left', '30px');
-	  $('.kid').attr('src', '../images/kid.png');
+	  $('.kid').attr('src', './images/kid.png');
 	  $('.kid').css('margin-right', '30px');
 	  $('.kid').css('transition-duration', '.3s');
 	  disableButtons();
@@ -196,7 +196,7 @@
 	  var phArray = hangman.phArray.join('');
 	  var wordToGuess = hangman.wordToGuess;
 	  if (phArray === wordToGuess) {
-	    $('.kid').attr('src', '../images/kidhappy.png');
+	    $('.kid').attr('src', './images/kidhappy.png');
 	    $('.letter').attr('disabled', true);
 	    playerMessage.innerHTML = "You survived! Click new word to play again!";
 	    resetArray();
@@ -234,7 +234,7 @@
 	  if (incorrectGuessCount === 5) {
 	    $('.empty-word').text(wordToGuess);
 	    $('.mummy').css('margin-left', '63%');
-	    $('.kid').attr('src', '../images/kidX.png');
+	    $('.kid').attr('src', './images/kidX.png');
 	    $('.kid').css('margin-right', '-100%');
 	    $('.kid').css('transition-delay', '.5s');
 	    $('.kid').css('transition-duration', '3s');
