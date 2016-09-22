@@ -1,10 +1,27 @@
-.player-message {
+body {
   font-family:'Amatica SC', cursive;
+}
+
+.player-message {
+
   font-size: 40px;
+  display: flex;
+  margin:auto;
+  justify-content: center;
+}
+
+.empty-word {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.keyboard-container {
+border-top: 1px solid #455C4F;
 }
 
  .difficulty-container {
-   font-family:'Amatica SC', cursive;
    font-size: 20px;
    display: flex;
    justify-content: center;
@@ -12,7 +29,6 @@
  }
 
  .guesscount-container {
-   font-family:'Amatica SC', cursive;
    font-size: 30px;
    display: flex;
    justify-content: center;
@@ -22,6 +38,24 @@
 
  .correct-guesses, .incorrect-guesses {
    padding: 5px;
+ }
+
+ .new-word-button {
+   display: flex;
+   font-size: 10pt;
+   margin: 10px auto;
+   justify-content: center;
+   background: #CC5543;
+   border: 1px #455C4F solid;
+   width: 90px;
+   height: 50px;
+   color: white;
+   outline-color: #FF6600;
+ }
+
+ .new-word-button:hover {
+   background: #EDB579;
+   border-color: #455C4F;
  }
 
  .up, .down {
@@ -38,6 +72,12 @@
    background: #CC5543;
  }
 
+ .up:disabled, .down:disabled, .new-word-button:disabled {
+   color: lightgrey;
+   background: #FFEFDB;
+   border: lightgrey;
+ }
+
 .letter {
   background: #EDB579;
   border: 1px #455C4F solid;
@@ -47,28 +87,21 @@
   outline-color: #FF6600;
 }
 
-.top-row, .middle-row, .bottom-row {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2px;
-}
-
-.top-row {
-  padding-top: 5px;
-}
-
 .letter:hover {
   background: #CC5543;
   color: white;
   border-color: #455C4F;
 }
 
-.player-message {
-  display: flex;
-  margin:auto;
-  justify-content: center;
+.top-row {
+  padding-top: 5px;
 }
 
+.top-row, .middle-row, .bottom-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+}
 
 .mummy {
   position: relative;
@@ -80,39 +113,9 @@
 .kid {
   height: 150px;
   width: 150px;
-  float: right;
   margin-top: 50px;
   margin-right: 10px;
-}
-
-
-.empty-word {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  font-family: 'Amatica SC', cursive;
-  font-size: 50px;
-}
-
-.keyboard-container {
-border-top: 1px solid #455C4F;
-}
-
-.new-word-button {
-  display: flex;
-  margin: 10px auto;
-  justify-content: center;
-  background: #CC5543;
-  border: 1px #455C4F solid;
-  width: 90px;
-  height: 50px;
-  color: white;
-  outline-color: #FF6600;
-}
-
-.new-word-button:hover {
-  background: #EDB579;
-  border-color: #455C4F;
+  float: right;
 }
 
 .leaves {
