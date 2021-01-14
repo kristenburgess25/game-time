@@ -1,3 +1,5 @@
+[Live version of this game can be played here](https://kristenburgess25.github.io/game-time/)
+
 # Game Time Starter Kit
 
 To install the dependencies:
